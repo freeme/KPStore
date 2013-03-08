@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F222C2716E9D782004CE15F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2616E9D782004CE15F /* UIKit.framework */; };
+		3F222C2916E9D782004CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2816E9D782004CE15F /* Foundation.framework */; };
+		3F222C2B16E9D782004CE15F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2A16E9D782004CE15F /* CoreGraphics.framework */; };
+		3F222C3116E9D782004CE15F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C2F16E9D782004CE15F /* InfoPlist.strings */; };
+		3F222C3316E9D782004CE15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C3216E9D782004CE15F /* main.m */; };
+		3F222C3716E9D782004CE15F /* BTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C3616E9D782004CE15F /* BTAppDelegate.m */; };
+		3F222C3916E9D782004CE15F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C3816E9D782004CE15F /* Default.png */; };
+		3F222C3B16E9D782004CE15F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C3A16E9D782004CE15F /* Default@2x.png */; };
+		3F222C3D16E9D782004CE15F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C3C16E9D782004CE15F /* Default-568h@2x.png */; };
+		3F222C4516E9D782004CE15F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C4416E9D782004CE15F /* SenTestingKit.framework */; };
+		3F222C4616E9D782004CE15F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2616E9D782004CE15F /* UIKit.framework */; };
+		3F222C4716E9D782004CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2816E9D782004CE15F /* Foundation.framework */; };
+		3F222C4F16E9D782004CE15F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C4D16E9D782004CE15F /* InfoPlist.strings */; };
+		3F222C5216E9D782004CE15F /* WeidoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5116E9D782004CE15F /* WeidoTests.m */; };
+		3F222C6E16E9D82F004CE15F /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5C16E9D82F004CE15F /* EditTaskViewController.m */; };
+		3F222C6F16E9D82F004CE15F /* FetchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5E16E9D82F004CE15F /* FetchListViewController.m */; };
+		3F222C7016E9D82F004CE15F /* FetchRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */; };
+		3F222C7116E9D82F004CE15F /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6216E9D82F004CE15F /* Project.m */; };
+		3F222C7216E9D82F004CE15F /* ProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6416E9D82F004CE15F /* ProjectListViewController.m */; };
+		3F222C7316E9D82F004CE15F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6516E9D82F004CE15F /* RootViewController.m */; };
+		3F222C7416E9D82F004CE15F /* SelectProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6716E9D82F004CE15F /* SelectProjectViewController.m */; };
+		3F222C7516E9D82F004CE15F /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6916E9D82F004CE15F /* Task.m */; };
+		3F222C7616E9D82F004CE15F /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6B16E9D82F004CE15F /* TaskListViewController.m */; };
+		3F222C7716E9D82F004CE15F /* TaskListViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6D16E9D82F004CE15F /* TaskListViewControllerEx.m */; };
+		3F222C7C16E9D83A004CE15F /* CheckboxActive-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C7816E9D83A004CE15F /* CheckboxActive-N.png */; };
+		3F222C7D16E9D83A004CE15F /* CheckboxDone-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */; };
+		3F222C7E16E9D83A004CE15F /* Weido.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C7A16E9D83A004CE15F /* Weido.xcdatamodeld */; };
+		3F222C8816E9D903004CE15F /* KPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8516E9D903004CE15F /* KPStore.m */; };
+		3F222C8916E9D903004CE15F /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8716E9D903004CE15F /* NSManagedObject+ActiveRecord.m */; };
+		3F222C8B16E9D984004CE15F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C8A16E9D984004CE15F /* CoreData.framework */; };
+		3F222C9016E9DD81004CE15F /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8F16E9DD81004CE15F /* Tag.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F222C4816E9D782004CE15F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F222C1916E9D782004CE15F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F222C2116E9D782004CE15F;
+			remoteInfo = Weido;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F222C2216E9D782004CE15F /* Weido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weido.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F222C2616E9D782004CE15F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F222C2816E9D782004CE15F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F222C2A16E9D782004CE15F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F222C2E16E9D782004CE15F /* Weido-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weido-Info.plist"; sourceTree = "<group>"; };
+		3F222C3016E9D782004CE15F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F222C3216E9D782004CE15F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F222C3416E9D782004CE15F /* Weido-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weido-Prefix.pch"; sourceTree = "<group>"; };
+		3F222C3516E9D782004CE15F /* BTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAppDelegate.h; sourceTree = "<group>"; };
+		3F222C3616E9D782004CE15F /* BTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAppDelegate.m; sourceTree = "<group>"; };
+		3F222C3816E9D782004CE15F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3F222C3A16E9D782004CE15F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3F222C3C16E9D782004CE15F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3F222C4316E9D782004CE15F /* WeidoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeidoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F222C4416E9D782004CE15F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F222C4C16E9D782004CE15F /* WeidoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeidoTests-Info.plist"; sourceTree = "<group>"; };
+		3F222C4E16E9D782004CE15F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F222C5016E9D782004CE15F /* WeidoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeidoTests.h; sourceTree = "<group>"; };
+		3F222C5116E9D782004CE15F /* WeidoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeidoTests.m; sourceTree = "<group>"; };
+		3F222C5B16E9D82F004CE15F /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
+		3F222C5C16E9D82F004CE15F /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
+		3F222C5D16E9D82F004CE15F /* FetchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchListViewController.h; sourceTree = "<group>"; };
+		3F222C5E16E9D82F004CE15F /* FetchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchListViewController.m; sourceTree = "<group>"; };
+		3F222C5F16E9D82F004CE15F /* FetchRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRequestFactory.h; sourceTree = "<group>"; };
+		3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRequestFactory.m; sourceTree = "<group>"; };
+		3F222C6116E9D82F004CE15F /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		3F222C6216E9D82F004CE15F /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		3F222C6316E9D82F004CE15F /* ProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListViewController.h; sourceTree = "<group>"; };
+		3F222C6416E9D82F004CE15F /* ProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListViewController.m; sourceTree = "<group>"; };
+		3F222C6516E9D82F004CE15F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3F222C6616E9D82F004CE15F /* SelectProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectProjectViewController.h; sourceTree = "<group>"; };
+		3F222C6716E9D82F004CE15F /* SelectProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectProjectViewController.m; sourceTree = "<group>"; };
+		3F222C6816E9D82F004CE15F /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		3F222C6916E9D82F004CE15F /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		3F222C6A16E9D82F004CE15F /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
+		3F222C6B16E9D82F004CE15F /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
+		3F222C6C16E9D82F004CE15F /* TaskListViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewControllerEx.h; sourceTree = "<group>"; };
+		3F222C6D16E9D82F004CE15F /* TaskListViewControllerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewControllerEx.m; sourceTree = "<group>"; };
+		3F222C7816E9D83A004CE15F /* CheckboxActive-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckboxActive-N.png"; sourceTree = "<group>"; };
+		3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckboxDone-N.png"; sourceTree = "<group>"; };
+		3F222C7B16E9D83A004CE15F /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
+		3F222C8416E9D903004CE15F /* KPStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStore.h; sourceTree = "<group>"; };
+		3F222C8516E9D903004CE15F /* KPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStore.m; sourceTree = "<group>"; };
+		3F222C8616E9D903004CE15F /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		3F222C8716E9D903004CE15F /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		3F222C8A16E9D984004CE15F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3F222C8E16E9DD81004CE15F /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		3F222C8F16E9DD81004CE15F /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F222C1F16E9D782004CE15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F222C8B16E9D984004CE15F /* CoreData.framework in Frameworks */,
+				3F222C2716E9D782004CE15F /* UIKit.framework in Frameworks */,
+				3F222C2916E9D782004CE15F /* Foundation.framework in Frameworks */,
+				3F222C2B16E9D782004CE15F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F222C3F16E9D782004CE15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F222C4516E9D782004CE15F /* SenTestingKit.framework in Frameworks */,
+				3F222C4616E9D782004CE15F /* UIKit.framework in Frameworks */,
+				3F222C4716E9D782004CE15F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F222C1716E9D782004CE15F = {
+			isa = PBXGroup;
+			children = (
+				3F222C8316E9D903004CE15F /* KPStore */,
+				3F222C2C16E9D782004CE15F /* Weido */,
+				3F222C4A16E9D782004CE15F /* WeidoTests */,
+				3F222C2516E9D782004CE15F /* Frameworks */,
+				3F222C2316E9D782004CE15F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F222C2316E9D782004CE15F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C2216E9D782004CE15F /* Weido.app */,
+				3F222C4316E9D782004CE15F /* WeidoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F222C2516E9D782004CE15F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C8A16E9D984004CE15F /* CoreData.framework */,
+				3F222C2616E9D782004CE15F /* UIKit.framework */,
+				3F222C2816E9D782004CE15F /* Foundation.framework */,
+				3F222C2A16E9D782004CE15F /* CoreGraphics.framework */,
+				3F222C4416E9D782004CE15F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F222C2C16E9D782004CE15F /* Weido */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C8D16E9DA44004CE15F /* CDObjects */,
+				3F222C8C16E9DA37004CE15F /* Actions */,
+				3F222C5B16E9D82F004CE15F /* EditTaskViewController.h */,
+				3F222C5C16E9D82F004CE15F /* EditTaskViewController.m */,
+				3F222C5D16E9D82F004CE15F /* FetchListViewController.h */,
+				3F222C5E16E9D82F004CE15F /* FetchListViewController.m */,
+				3F222C5F16E9D82F004CE15F /* FetchRequestFactory.h */,
+				3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */,
+				3F222C6316E9D82F004CE15F /* ProjectListViewController.h */,
+				3F222C6416E9D82F004CE15F /* ProjectListViewController.m */,
+				3F222C6516E9D82F004CE15F /* RootViewController.m */,
+				3F222C6616E9D82F004CE15F /* SelectProjectViewController.h */,
+				3F222C6716E9D82F004CE15F /* SelectProjectViewController.m */,
+				3F222C6A16E9D82F004CE15F /* TaskListViewController.h */,
+				3F222C6B16E9D82F004CE15F /* TaskListViewController.m */,
+				3F222C6C16E9D82F004CE15F /* TaskListViewControllerEx.h */,
+				3F222C6D16E9D82F004CE15F /* TaskListViewControllerEx.m */,
+				3F222C3516E9D782004CE15F /* BTAppDelegate.h */,
+				3F222C3616E9D782004CE15F /* BTAppDelegate.m */,
+				3F222C2D16E9D782004CE15F /* Supporting Files */,
+			);
+			path = Weido;
+			sourceTree = "<group>";
+		};
+		3F222C2D16E9D782004CE15F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C7816E9D83A004CE15F /* CheckboxActive-N.png */,
+				3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */,
+				3F222C7A16E9D83A004CE15F /* Weido.xcdatamodeld */,
+				3F222C2E16E9D782004CE15F /* Weido-Info.plist */,
+				3F222C2F16E9D782004CE15F /* InfoPlist.strings */,
+				3F222C3216E9D782004CE15F /* main.m */,
+				3F222C3416E9D782004CE15F /* Weido-Prefix.pch */,
+				3F222C3816E9D782004CE15F /* Default.png */,
+				3F222C3A16E9D782004CE15F /* Default@2x.png */,
+				3F222C3C16E9D782004CE15F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F222C4A16E9D782004CE15F /* WeidoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C5016E9D782004CE15F /* WeidoTests.h */,
+				3F222C5116E9D782004CE15F /* WeidoTests.m */,
+				3F222C4B16E9D782004CE15F /* Supporting Files */,
+			);
+			path = WeidoTests;
+			sourceTree = "<group>";
+		};
+		3F222C4B16E9D782004CE15F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C4C16E9D782004CE15F /* WeidoTests-Info.plist */,
+				3F222C4D16E9D782004CE15F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F222C8316E9D903004CE15F /* KPStore */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C8416E9D903004CE15F /* KPStore.h */,
+				3F222C8516E9D903004CE15F /* KPStore.m */,
+				3F222C8616E9D903004CE15F /* NSManagedObject+ActiveRecord.h */,
+				3F222C8716E9D903004CE15F /* NSManagedObject+ActiveRecord.m */,
+			);
+			path = KPStore;
+			sourceTree = "<group>";
+		};
+		3F222C8C16E9DA37004CE15F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		3F222C8D16E9DA44004CE15F /* CDObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3F222C6116E9D82F004CE15F /* Project.h */,
+				3F222C6216E9D82F004CE15F /* Project.m */,
+				3F222C6816E9D82F004CE15F /* Task.h */,
+				3F222C6916E9D82F004CE15F /* Task.m */,
+				3F222C8E16E9DD81004CE15F /* Tag.h */,
+				3F222C8F16E9DD81004CE15F /* Tag.m */,
+			);
+			name = CDObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F222C2116E9D782004CE15F /* Weido */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F222C5516E9D782004CE15F /* Build configuration list for PBXNativeTarget "Weido" */;
+			buildPhases = (
+				3F222C1E16E9D782004CE15F /* Sources */,
+				3F222C1F16E9D782004CE15F /* Frameworks */,
+				3F222C2016E9D782004CE15F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weido;
+			productName = Weido;
+			productReference = 3F222C2216E9D782004CE15F /* Weido.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F222C4216E9D782004CE15F /* WeidoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F222C5816E9D782004CE15F /* Build configuration list for PBXNativeTarget "WeidoTests" */;
+			buildPhases = (
+				3F222C3E16E9D782004CE15F /* Sources */,
+				3F222C3F16E9D782004CE15F /* Frameworks */,
+				3F222C4016E9D782004CE15F /* Resources */,
+				3F222C4116E9D782004CE15F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F222C4916E9D782004CE15F /* PBXTargetDependency */,
+			);
+			name = WeidoTests;
+			productName = WeidoTests;
+			productReference = 3F222C4316E9D782004CE15F /* WeidoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F222C1916E9D782004CE15F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "He baochen";
+			};
+			buildConfigurationList = 3F222C1C16E9D782004CE15F /* Build configuration list for PBXProject "Weido" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F222C1716E9D782004CE15F;
+			productRefGroup = 3F222C2316E9D782004CE15F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F222C2116E9D782004CE15F /* Weido */,
+				3F222C4216E9D782004CE15F /* WeidoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F222C2016E9D782004CE15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F222C3116E9D782004CE15F /* InfoPlist.strings in Resources */,
+				3F222C3916E9D782004CE15F /* Default.png in Resources */,
+				3F222C3B16E9D782004CE15F /* Default@2x.png in Resources */,
+				3F222C3D16E9D782004CE15F /* Default-568h@2x.png in Resources */,
+				3F222C7C16E9D83A004CE15F /* CheckboxActive-N.png in Resources */,
+				3F222C7D16E9D83A004CE15F /* CheckboxDone-N.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F222C4016E9D782004CE15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F222C4F16E9D782004CE15F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F222C4116E9D782004CE15F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F222C1E16E9D782004CE15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F222C3316E9D782004CE15F /* main.m in Sources */,
+				3F222C3716E9D782004CE15F /* BTAppDelegate.m in Sources */,
+				3F222C6E16E9D82F004CE15F /* EditTaskViewController.m in Sources */,
+				3F222C6F16E9D82F004CE15F /* FetchListViewController.m in Sources */,
+				3F222C7016E9D82F004CE15F /* FetchRequestFactory.m in Sources */,
+				3F222C7116E9D82F004CE15F /* Project.m in Sources */,
+				3F222C7216E9D82F004CE15F /* ProjectListViewController.m in Sources */,
+				3F222C7316E9D82F004CE15F /* RootViewController.m in Sources */,
+				3F222C7416E9D82F004CE15F /* SelectProjectViewController.m in Sources */,
+				3F222C7516E9D82F004CE15F /* Task.m in Sources */,
+				3F222C7616E9D82F004CE15F /* TaskListViewController.m in Sources */,
+				3F222C7716E9D82F004CE15F /* TaskListViewControllerEx.m in Sources */,
+				3F222C7E16E9D83A004CE15F /* Weido.xcdatamodeld in Sources */,
+				3F222C8816E9D903004CE15F /* KPStore.m in Sources */,
+				3F222C8916E9D903004CE15F /* NSManagedObject+ActiveRecord.m in Sources */,
+				3F222C9016E9DD81004CE15F /* Tag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F222C3E16E9D782004CE15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F222C5216E9D782004CE15F /* WeidoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F222C4916E9D782004CE15F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F222C2116E9D782004CE15F /* Weido */;
+			targetProxy = 3F222C4816E9D782004CE15F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F222C2F16E9D782004CE15F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F222C3016E9D782004CE15F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F222C4D16E9D782004CE15F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F222C4E16E9D782004CE15F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F222C5316E9D782004CE15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F222C5416E9D782004CE15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F222C5616E9D782004CE15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weido/Weido-Prefix.pch";
+				INFOPLIST_FILE = "Weido/Weido-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F222C5716E9D782004CE15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weido/Weido-Prefix.pch";
+				INFOPLIST_FILE = "Weido/Weido-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F222C5916E9D782004CE15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weido.app/Weido";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weido/Weido-Prefix.pch";
+				INFOPLIST_FILE = "WeidoTests/WeidoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3F222C5A16E9D782004CE15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weido.app/Weido";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weido/Weido-Prefix.pch";
+				INFOPLIST_FILE = "WeidoTests/WeidoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F222C1C16E9D782004CE15F /* Build configuration list for PBXProject "Weido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F222C5316E9D782004CE15F /* Debug */,
+				3F222C5416E9D782004CE15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F222C5516E9D782004CE15F /* Build configuration list for PBXNativeTarget "Weido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F222C5616E9D782004CE15F /* Debug */,
+				3F222C5716E9D782004CE15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F222C5816E9D782004CE15F /* Build configuration list for PBXNativeTarget "WeidoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F222C5916E9D782004CE15F /* Debug */,
+				3F222C5A16E9D782004CE15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F222C7A16E9D83A004CE15F /* Weido.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F222C7B16E9D83A004CE15F /* Todo.xcdatamodel */,
+			);
+			currentVersion = 3F222C7B16E9D83A004CE15F /* Todo.xcdatamodel */;
+			path = Weido.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F222C1916E9D782004CE15F /* Project object */;
+}
