@@ -1,6 +1,6 @@
 //
 //  KPStore.m
-//  KPStore
+//  kweibo
 //
 //  Created by He baochen on 11-9-6.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
@@ -13,7 +13,7 @@
  1. 在新工程中使用的时候，需要先修改 MODEL_FILE_NAME, 例如model文件名为 Hello.xcdatamodeld，MODEL_FILE_NAME 需要指定为Hello
  
  */
-#define SHARED_MODEL_FILE_NAME @"KPStoreDemoModel"
+#define SHARED_MODEL_FILE_NAME @"BTStatistics"
 #ifndef SHARED_MODEL_FILE_NAME
 #warning please define SHARED_MODEL_FILE_NAME
 #endif
@@ -80,10 +80,7 @@ static NSMutableDictionary* __boundClassDict = nil;
 }
 
 + (void) saveAllStore {
-  NSArray *stores = [__namedStoreDict allValues];
-  for (KPStore *store in stores) {
-    [store saveContext];
-  }
+  
 }
 
 + (void)destory {
@@ -119,7 +116,7 @@ static NSMutableDictionary* __boundClassDict = nil;
 
 
 - (void) didReceiveMemoryWarning {
-  //Can we reset the context here?
+  
   
 }
 
@@ -143,13 +140,13 @@ static NSMutableDictionary* __boundClassDict = nil;
        */
       //      NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 #ifdef DEBUG
-      NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
       abort();
 #endif
     }
   }
 }
 
+//TODO: make sure that this methond is only called on main thread
 - (NSManagedObjectContext*)mainManagedObjectContext {
   @synchronized (self) {
     if (_managedObjectContext == nil) {
@@ -220,13 +217,13 @@ static NSMutableDictionary* __boundClassDict = nil;
       NSPersistentStore *persistenStore = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error];
       if (!persistenStore) {
         [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
-    //    ELog(@"Removed incompatible model version: %@", [storeURL lastPathComponent]);
+          NSLog(@"Removed incompatible model version: %@", [storeURL lastPathComponent]);
         
         persistenStore = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error];
         if (persistenStore) {
           error = nil;
         } else {
-    //      FLog(@"error domain: %@, error code:%d", [error domain], [error code]);
+          NSLog(@"error domain: %@, error code:%d", [error domain], [error code]);
         }
         /*
          Replace this implementation with code to handle the error appropriately.
@@ -313,7 +310,6 @@ static NSMutableDictionary* __boundClassDict = nil;
 }
 
 - (void)mergeChanges:(NSNotification *)notification {
-  NSLog(@"mergeChanges:@", notification);
   if ([notification object] == [self mainManagedObjectContext]) {
     // main context save, no need to perform the merge
     return;

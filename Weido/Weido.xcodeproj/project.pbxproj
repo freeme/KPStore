@@ -34,10 +34,10 @@
 		3F222C7C16E9D83A004CE15F /* CheckboxActive-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C7816E9D83A004CE15F /* CheckboxActive-N.png */; };
 		3F222C7D16E9D83A004CE15F /* CheckboxDone-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */; };
 		3F222C7E16E9D83A004CE15F /* Weido.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C7A16E9D83A004CE15F /* Weido.xcdatamodeld */; };
-		3F222C8816E9D903004CE15F /* KPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8516E9D903004CE15F /* KPStore.m */; };
-		3F222C8916E9D903004CE15F /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8716E9D903004CE15F /* NSManagedObject+ActiveRecord.m */; };
 		3F222C8B16E9D984004CE15F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C8A16E9D984004CE15F /* CoreData.framework */; };
 		3F222C9016E9DD81004CE15F /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8F16E9DD81004CE15F /* Tag.m */; };
+		3FBA16B116F15B4900EC131B /* KPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA16AE16F15B4900EC131B /* KPStore.m */; };
+		3FBA16B216F15B4900EC131B /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,13 +92,14 @@
 		3F222C7816E9D83A004CE15F /* CheckboxActive-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckboxActive-N.png"; sourceTree = "<group>"; };
 		3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckboxDone-N.png"; sourceTree = "<group>"; };
 		3F222C7B16E9D83A004CE15F /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
-		3F222C8416E9D903004CE15F /* KPStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStore.h; sourceTree = "<group>"; };
-		3F222C8516E9D903004CE15F /* KPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStore.m; sourceTree = "<group>"; };
-		3F222C8616E9D903004CE15F /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
-		3F222C8716E9D903004CE15F /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
 		3F222C8A16E9D984004CE15F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3F222C8E16E9DD81004CE15F /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		3F222C8F16E9DD81004CE15F /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		3FBA16AD16F15B4900EC131B /* KPStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStore.h; sourceTree = "<group>"; };
+		3FBA16AE16F15B4900EC131B /* KPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStore.m; sourceTree = "<group>"; };
+		3FBA16AF16F15B4900EC131B /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		3FBA16B316F15D7100EC131B /* KPStore+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KPStore+ActiveRecord.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +130,7 @@
 		3F222C1716E9D782004CE15F = {
 			isa = PBXGroup;
 			children = (
-				3F222C8316E9D903004CE15F /* KPStore */,
+				3FBA16AC16F15B4900EC131B /* KPStore */,
 				3F222C2C16E9D782004CE15F /* Weido */,
 				3F222C4A16E9D782004CE15F /* WeidoTests */,
 				3F222C2516E9D782004CE15F /* Frameworks */,
@@ -221,17 +222,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3F222C8316E9D903004CE15F /* KPStore */ = {
-			isa = PBXGroup;
-			children = (
-				3F222C8416E9D903004CE15F /* KPStore.h */,
-				3F222C8516E9D903004CE15F /* KPStore.m */,
-				3F222C8616E9D903004CE15F /* NSManagedObject+ActiveRecord.h */,
-				3F222C8716E9D903004CE15F /* NSManagedObject+ActiveRecord.m */,
-			);
-			path = KPStore;
-			sourceTree = "<group>";
-		};
 		3F222C8C16E9DA37004CE15F /* Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +240,19 @@
 				3F222C8F16E9DD81004CE15F /* Tag.m */,
 			);
 			name = CDObjects;
+			sourceTree = "<group>";
+		};
+		3FBA16AC16F15B4900EC131B /* KPStore */ = {
+			isa = PBXGroup;
+			children = (
+				3FBA16AD16F15B4900EC131B /* KPStore.h */,
+				3FBA16AE16F15B4900EC131B /* KPStore.m */,
+				3FBA16AF16F15B4900EC131B /* NSManagedObject+ActiveRecord.h */,
+				3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */,
+				3FBA16B316F15D7100EC131B /* KPStore+ActiveRecord.h */,
+			);
+			name = KPStore;
+			path = ../KPStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,9 +380,9 @@
 				3F222C7616E9D82F004CE15F /* TaskListViewController.m in Sources */,
 				3F222C7716E9D82F004CE15F /* TaskListViewControllerEx.m in Sources */,
 				3F222C7E16E9D83A004CE15F /* Weido.xcdatamodeld in Sources */,
-				3F222C8816E9D903004CE15F /* KPStore.m in Sources */,
-				3F222C8916E9D903004CE15F /* NSManagedObject+ActiveRecord.m in Sources */,
 				3F222C9016E9DD81004CE15F /* Tag.m in Sources */,
+				3FBA16B116F15B4900EC131B /* KPStore.m in Sources */,
+				3FBA16B216F15B4900EC131B /* NSManagedObject+ActiveRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +548,7 @@
 				3F222C5716E9D782004CE15F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F222C5816E9D782004CE15F /* Build configuration list for PBXNativeTarget "WeidoTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +557,7 @@
 				3F222C5A16E9D782004CE15F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
