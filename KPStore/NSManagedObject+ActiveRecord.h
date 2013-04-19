@@ -20,7 +20,7 @@
 					   error:(NSError **)error;
 + (NSArray *)findAllOnLimit:(NSUInteger)theLimit
 					  error:(NSError **)anError;
-
++ (id)findByID:(NSManagedObjectID*)objectID;
 //创新一个新对象
 + (id)createNewObject;
 

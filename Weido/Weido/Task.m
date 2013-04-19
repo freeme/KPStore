@@ -1,13 +1,14 @@
 //
 //  Task.m
-//  Todo
+//  Weido
 //
-//  Created by He baochen on 12-3-2.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Created by He baochen on 13-3-29.
+//  Copyright (c) 2013年 He baochen. All rights reserved.
 //
 
 #import "Task.h"
 #import "Project.h"
+#import "Tag.h"
 
 
 @implementation Task
@@ -18,5 +19,6 @@
 @dynamic note;
 @dynamic title;
 @dynamic project;
+@dynamic tags;
 
 @end

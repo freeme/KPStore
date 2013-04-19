@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "EditTaskViewController.h"
 #import "FetchRequestFactory.h"
+#import "TestAction.h"
 
 typedef enum {
     SectionTypeInput = 0,
@@ -27,6 +28,7 @@ typedef enum {
   NSFetchRequest *_projectFetchRequest;
   NSFetchRequest *_finishFetchRequest;
   BOOL _needReloadData;
+  TestAction *_testAction ;
 }
 
 @end

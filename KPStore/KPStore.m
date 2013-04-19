@@ -13,7 +13,7 @@
  1. 在新工程中使用的时候，需要先修改 MODEL_FILE_NAME, 例如model文件名为 Hello.xcdatamodeld，MODEL_FILE_NAME 需要指定为Hello
  
  */
-#define SHARED_MODEL_FILE_NAME @"BTStatistics"
+#define SHARED_MODEL_FILE_NAME @"Weido"
 #ifndef SHARED_MODEL_FILE_NAME
 #warning please define SHARED_MODEL_FILE_NAME
 #endif
@@ -41,6 +41,8 @@ static NSMutableDictionary* __boundClassDict = nil;
 	if (__boundClassDict == nil) {
 		__boundClassDict = [[NSMutableDictionary alloc] init];
 	}
+  //make sure that the main store and moc is init on main thread
+  [self sharedStore];
 }
 
 + (KPStore*)registerStoreWithName:(NSString*)name modelFile:(NSString*)modelFileName {
@@ -73,6 +75,7 @@ static NSMutableDictionary* __boundClassDict = nil;
     @synchronized(self) {
       if (!__instance) {
         __instance = [[KPStore alloc] initWithModelFileName:SHARED_MODEL_FILE_NAME];
+        __instance.managedObjectContext;
       }
     }
   }
@@ -143,6 +146,9 @@ static NSMutableDictionary* __boundClassDict = nil;
       abort();
 #endif
     }
+  }
+  if (![NSThread isMainThread]) {
+    [context reset];
   }
 }
 

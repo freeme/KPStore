@@ -39,23 +39,35 @@
 							   error:anError];
 }
 
-+ (NSArray*)findAllWithError:(NSError **)error {
-  return [self findAllSortByKey:nil ascending:YES error:error];
-}
+//+ (NSArray*)findAllWithError:(NSError **)error {
+//  return [self findAllSortByKey:nil ascending:YES error:error];
+//}
+//
+//+ (NSArray*)findAllSortByKey:(NSString*)sortKey ascending:(BOOL)ascending error:(NSError **)error {
+//  NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
+//  NSEntityDescription *entity = [[self currentStore] entityForName:[self entityName]];
+//  [fetchRequest setEntity:entity];
+//  if (sortKey) {
+//    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:sortKey
+//                                                                   ascending:ascending];
+//    [fetchRequest setSortDescriptors: [NSArray arrayWithObject:sortDescriptor]];
+//    [sortDescriptor release];
+//  }
+//  NSArray *array = [[self currentStore] executeFetchRequest:fetchRequest error:error];
+//  [fetchRequest release];
+//  return array;
+//}
 
-+ (NSArray*)findAllSortByKey:(NSString*)sortKey ascending:(BOOL)ascending error:(NSError **)error {
-  NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
-  NSEntityDescription *entity = [[self currentStore] entityForName:[self entityName]];
-  [fetchRequest setEntity:entity];
-  if (sortKey) {
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:sortKey
-                                                                   ascending:ascending];
-    [fetchRequest setSortDescriptors: [NSArray arrayWithObject:sortDescriptor]];
-    [sortDescriptor release];
++ (id)findByID:(NSManagedObjectID*)objectID {
+  NSFetchRequest* fetchRequest = [self defaultFetchRequest];
+  [fetchRequest setFetchLimit:1];
+  [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"self == %@",objectID]];
+  NSArray *results = [self executeFetchRequest:fetchRequest
+                                         error:NULL];
+  if ([results count] > 0) {
+    return [results objectAtIndex:0];
   }
-  NSArray *array = [[self currentStore] executeFetchRequest:fetchRequest error:error];
-  [fetchRequest release];
-  return array;
+  return nil;
 }
 
 
@@ -65,14 +77,14 @@
   return newObject;
 }
 
-+ (void)deleteAllObjects {
-	NSArray *objects = [self findAllWithError:nil];
-	for (NSManagedObject *o in objects) {
-		[o deleteSelf];
-	}
-  //Gary to not call save in this class
-	//[self save];
-}
+//+ (void)deleteAllObjects {
+//	NSArray *objects = [self findAllWithError:nil];
+//	for (NSManagedObject *o in objects) {
+//		[o deleteSelf];
+//	}
+//  //Gary to not call save in this class
+//	//[self save];
+//}
 
 + (void) deleteObjectByID:(NSManagedObjectID*)objectID {
   [[self currentStore] deleteObjectByID:objectID];

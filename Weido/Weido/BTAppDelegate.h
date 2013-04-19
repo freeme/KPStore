@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BTCrashReport.h"
+
 @class RootViewController;
 @interface BTAppDelegate : UIResponder <UIApplicationDelegate> {
   UINavigationController *_navController;

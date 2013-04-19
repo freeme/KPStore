@@ -1,9 +1,9 @@
 //
 //  Project.m
-//  Todo
+//  Weido
 //
-//  Created by He baochen on 12-3-2.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Created by He baochen on 13-3-29.
+//  Copyright (c) 2013年 He baochen. All rights reserved.
 //
 
 #import "Project.h"
@@ -17,19 +17,5 @@
 @dynamic isFinish;
 @dynamic name;
 @dynamic tasks;
-
-- (void)addTasksObject:(Task *)value {
-  // Plesase read the comments in [EditTaskViewController saveTask] method
-}
-
-
-+ (BOOL) addProjectWithName:(NSString*)name {
-  //    Project *newProject = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:self.managedObjectContext];
-  Project *newProject = (Project*)[Project createNewObject];
-  newProject.name = name;
-  newProject.createDate = [NSDate date];
-  [newProject save];
-  return YES; //TODO:
-}
 
 @end

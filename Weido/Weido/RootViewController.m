@@ -35,6 +35,8 @@
                                              selector:@selector(objectsDidChanged:)
                                                  name:NSManagedObjectContextObjectsDidChangeNotification
                                                object:[KPStore sharedStore].managedObjectContext];
+    
+     _testAction = [[TestAction alloc] init];
   }
   return self;
 }
@@ -129,6 +131,8 @@
 
 - (void) showAddTaskView {
   
+  [_testAction test2];
+  return;
   EditTaskViewController * viewController = [[EditTaskViewController alloc] initWithStyle:UITableViewStyleGrouped];
   UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
   viewController.delegate = self;

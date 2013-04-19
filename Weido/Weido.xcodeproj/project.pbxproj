@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0021BF1705425B003E30CD /* TestAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021BE1705425B003E30CD /* TestAction.m */; };
+		3F0021C4170561F9003E30CD /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C3170561F9003E30CD /* Project.m */; };
+		3F0021C7170561FA003E30CD /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C6170561FA003E30CD /* Tag.m */; };
+		3F0021CA170561FA003E30CD /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C9170561FA003E30CD /* Task.m */; };
+		3F0021D3170583D2003E30CD /* BTCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021D2170583D2003E30CD /* BTCrashReport.m */; };
+		3F0021D417058420003E30CD /* BTCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021D2170583D2003E30CD /* BTCrashReport.m */; };
 		3F222C2716E9D782004CE15F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2616E9D782004CE15F /* UIKit.framework */; };
 		3F222C2916E9D782004CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2816E9D782004CE15F /* Foundation.framework */; };
 		3F222C2B16E9D782004CE15F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2A16E9D782004CE15F /* CoreGraphics.framework */; };
@@ -24,20 +30,18 @@
 		3F222C6E16E9D82F004CE15F /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5C16E9D82F004CE15F /* EditTaskViewController.m */; };
 		3F222C6F16E9D82F004CE15F /* FetchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5E16E9D82F004CE15F /* FetchListViewController.m */; };
 		3F222C7016E9D82F004CE15F /* FetchRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */; };
-		3F222C7116E9D82F004CE15F /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6216E9D82F004CE15F /* Project.m */; };
 		3F222C7216E9D82F004CE15F /* ProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6416E9D82F004CE15F /* ProjectListViewController.m */; };
 		3F222C7316E9D82F004CE15F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6516E9D82F004CE15F /* RootViewController.m */; };
 		3F222C7416E9D82F004CE15F /* SelectProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6716E9D82F004CE15F /* SelectProjectViewController.m */; };
-		3F222C7516E9D82F004CE15F /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6916E9D82F004CE15F /* Task.m */; };
 		3F222C7616E9D82F004CE15F /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6B16E9D82F004CE15F /* TaskListViewController.m */; };
 		3F222C7716E9D82F004CE15F /* TaskListViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6D16E9D82F004CE15F /* TaskListViewControllerEx.m */; };
 		3F222C7C16E9D83A004CE15F /* CheckboxActive-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C7816E9D83A004CE15F /* CheckboxActive-N.png */; };
 		3F222C7D16E9D83A004CE15F /* CheckboxDone-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */; };
 		3F222C7E16E9D83A004CE15F /* Weido.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C7A16E9D83A004CE15F /* Weido.xcdatamodeld */; };
 		3F222C8B16E9D984004CE15F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C8A16E9D984004CE15F /* CoreData.framework */; };
-		3F222C9016E9DD81004CE15F /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C8F16E9DD81004CE15F /* Tag.m */; };
 		3FBA16B116F15B4900EC131B /* KPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA16AE16F15B4900EC131B /* KPStore.m */; };
 		3FBA16B216F15B4900EC131B /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */; };
+		3FCD9C9E16F95E3D00B6E122 /* Project+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD9C9D16F95E3D00B6E122 /* Project+Actions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0021BD1705425B003E30CD /* TestAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAction.h; sourceTree = "<group>"; };
+		3F0021BE1705425B003E30CD /* TestAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAction.m; sourceTree = "<group>"; };
+		3F0021C1170560DF003E30CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3F0021C2170561F9003E30CD /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		3F0021C3170561F9003E30CD /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		3F0021C5170561FA003E30CD /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		3F0021C6170561FA003E30CD /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		3F0021C8170561FA003E30CD /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		3F0021C9170561FA003E30CD /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		3F0021D1170583D2003E30CD /* BTCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCrashReport.h; sourceTree = "<group>"; };
+		3F0021D2170583D2003E30CD /* BTCrashReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCrashReport.m; sourceTree = "<group>"; };
 		3F222C2216E9D782004CE15F /* Weido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weido.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F222C2616E9D782004CE15F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F222C2816E9D782004CE15F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,15 +91,11 @@
 		3F222C5E16E9D82F004CE15F /* FetchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchListViewController.m; sourceTree = "<group>"; };
 		3F222C5F16E9D82F004CE15F /* FetchRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRequestFactory.h; sourceTree = "<group>"; };
 		3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRequestFactory.m; sourceTree = "<group>"; };
-		3F222C6116E9D82F004CE15F /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
-		3F222C6216E9D82F004CE15F /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		3F222C6316E9D82F004CE15F /* ProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListViewController.h; sourceTree = "<group>"; };
 		3F222C6416E9D82F004CE15F /* ProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListViewController.m; sourceTree = "<group>"; };
 		3F222C6516E9D82F004CE15F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		3F222C6616E9D82F004CE15F /* SelectProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectProjectViewController.h; sourceTree = "<group>"; };
 		3F222C6716E9D82F004CE15F /* SelectProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectProjectViewController.m; sourceTree = "<group>"; };
-		3F222C6816E9D82F004CE15F /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
-		3F222C6916E9D82F004CE15F /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		3F222C6A16E9D82F004CE15F /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
 		3F222C6B16E9D82F004CE15F /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
 		3F222C6C16E9D82F004CE15F /* TaskListViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewControllerEx.h; sourceTree = "<group>"; };
@@ -93,13 +104,13 @@
 		3F222C7916E9D83A004CE15F /* CheckboxDone-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckboxDone-N.png"; sourceTree = "<group>"; };
 		3F222C7B16E9D83A004CE15F /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
 		3F222C8A16E9D984004CE15F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3F222C8E16E9DD81004CE15F /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
-		3F222C8F16E9DD81004CE15F /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		3FBA16AD16F15B4900EC131B /* KPStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStore.h; sourceTree = "<group>"; };
 		3FBA16AE16F15B4900EC131B /* KPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStore.m; sourceTree = "<group>"; };
 		3FBA16AF16F15B4900EC131B /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
 		3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
 		3FBA16B316F15D7100EC131B /* KPStore+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KPStore+ActiveRecord.h"; sourceTree = "<group>"; };
+		3FCD9C9C16F95E3D00B6E122 /* Project+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Project+Actions.h"; sourceTree = "<group>"; };
+		3FCD9C9D16F95E3D00B6E122 /* Project+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Project+Actions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +173,8 @@
 		3F222C2C16E9D782004CE15F /* Weido */ = {
 			isa = PBXGroup;
 			children = (
+				3F0021D1170583D2003E30CD /* BTCrashReport.h */,
+				3F0021D2170583D2003E30CD /* BTCrashReport.m */,
 				3F222C8D16E9DA44004CE15F /* CDObjects */,
 				3F222C8C16E9DA37004CE15F /* Actions */,
 				3F222C5B16E9D82F004CE15F /* EditTaskViewController.h */,
@@ -172,6 +185,7 @@
 				3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */,
 				3F222C6316E9D82F004CE15F /* ProjectListViewController.h */,
 				3F222C6416E9D82F004CE15F /* ProjectListViewController.m */,
+				3F0021C1170560DF003E30CD /* RootViewController.h */,
 				3F222C6516E9D82F004CE15F /* RootViewController.m */,
 				3F222C6616E9D82F004CE15F /* SelectProjectViewController.h */,
 				3F222C6716E9D82F004CE15F /* SelectProjectViewController.m */,
@@ -225,6 +239,8 @@
 		3F222C8C16E9DA37004CE15F /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				3F0021BD1705425B003E30CD /* TestAction.h */,
+				3F0021BE1705425B003E30CD /* TestAction.m */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -232,12 +248,14 @@
 		3F222C8D16E9DA44004CE15F /* CDObjects */ = {
 			isa = PBXGroup;
 			children = (
-				3F222C6116E9D82F004CE15F /* Project.h */,
-				3F222C6216E9D82F004CE15F /* Project.m */,
-				3F222C6816E9D82F004CE15F /* Task.h */,
-				3F222C6916E9D82F004CE15F /* Task.m */,
-				3F222C8E16E9DD81004CE15F /* Tag.h */,
-				3F222C8F16E9DD81004CE15F /* Tag.m */,
+				3FCD9C9C16F95E3D00B6E122 /* Project+Actions.h */,
+				3FCD9C9D16F95E3D00B6E122 /* Project+Actions.m */,
+				3F0021C8170561FA003E30CD /* Task.h */,
+				3F0021C9170561FA003E30CD /* Task.m */,
+				3F0021C5170561FA003E30CD /* Tag.h */,
+				3F0021C6170561FA003E30CD /* Tag.m */,
+				3F0021C2170561F9003E30CD /* Project.h */,
+				3F0021C3170561F9003E30CD /* Project.m */,
 			);
 			name = CDObjects;
 			sourceTree = "<group>";
@@ -372,17 +390,20 @@
 				3F222C6E16E9D82F004CE15F /* EditTaskViewController.m in Sources */,
 				3F222C6F16E9D82F004CE15F /* FetchListViewController.m in Sources */,
 				3F222C7016E9D82F004CE15F /* FetchRequestFactory.m in Sources */,
-				3F222C7116E9D82F004CE15F /* Project.m in Sources */,
 				3F222C7216E9D82F004CE15F /* ProjectListViewController.m in Sources */,
 				3F222C7316E9D82F004CE15F /* RootViewController.m in Sources */,
 				3F222C7416E9D82F004CE15F /* SelectProjectViewController.m in Sources */,
-				3F222C7516E9D82F004CE15F /* Task.m in Sources */,
 				3F222C7616E9D82F004CE15F /* TaskListViewController.m in Sources */,
+				3F0021D417058420003E30CD /* BTCrashReport.m in Sources */,
 				3F222C7716E9D82F004CE15F /* TaskListViewControllerEx.m in Sources */,
 				3F222C7E16E9D83A004CE15F /* Weido.xcdatamodeld in Sources */,
-				3F222C9016E9DD81004CE15F /* Tag.m in Sources */,
 				3FBA16B116F15B4900EC131B /* KPStore.m in Sources */,
 				3FBA16B216F15B4900EC131B /* NSManagedObject+ActiveRecord.m in Sources */,
+				3FCD9C9E16F95E3D00B6E122 /* Project+Actions.m in Sources */,
+				3F0021BF1705425B003E30CD /* TestAction.m in Sources */,
+				3F0021C4170561F9003E30CD /* Project.m in Sources */,
+				3F0021C7170561FA003E30CD /* Tag.m in Sources */,
+				3F0021CA170561FA003E30CD /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F222C5216E9D782004CE15F /* WeidoTests.m in Sources */,
+				3F0021D3170583D2003E30CD /* BTCrashReport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
