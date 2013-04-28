@@ -9,5 +9,5 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import <CoreData/CoreData.h>
 
-#import "KPStore.h"
+#import "BTCoreDataStore.h"
 #import "NSManagedObject+ActiveRecord.h"

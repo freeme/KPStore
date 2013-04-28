@@ -131,7 +131,7 @@
 
 - (void) showAddTaskView {
   
-  [_testAction test2];
+  [_testAction test4];
   return;
   EditTaskViewController * viewController = [[EditTaskViewController alloc] initWithStyle:UITableViewStyleGrouped];
   UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];

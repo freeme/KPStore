@@ -7,6 +7,11 @@
 		<key>Weido.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 	</dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>3F222C4216E9D782004CE15F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3FC4CEEB172BBE4500510EF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

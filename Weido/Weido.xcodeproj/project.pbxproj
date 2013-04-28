@@ -11,7 +11,6 @@
 		3F0021C4170561F9003E30CD /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C3170561F9003E30CD /* Project.m */; };
 		3F0021C7170561FA003E30CD /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C6170561FA003E30CD /* Tag.m */; };
 		3F0021CA170561FA003E30CD /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C9170561FA003E30CD /* Task.m */; };
-		3F0021D3170583D2003E30CD /* BTCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021D2170583D2003E30CD /* BTCrashReport.m */; };
 		3F0021D417058420003E30CD /* BTCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021D2170583D2003E30CD /* BTCrashReport.m */; };
 		3F222C2716E9D782004CE15F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2616E9D782004CE15F /* UIKit.framework */; };
 		3F222C2916E9D782004CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2816E9D782004CE15F /* Foundation.framework */; };
@@ -22,11 +21,6 @@
 		3F222C3916E9D782004CE15F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C3816E9D782004CE15F /* Default.png */; };
 		3F222C3B16E9D782004CE15F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C3A16E9D782004CE15F /* Default@2x.png */; };
 		3F222C3D16E9D782004CE15F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C3C16E9D782004CE15F /* Default-568h@2x.png */; };
-		3F222C4516E9D782004CE15F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C4416E9D782004CE15F /* SenTestingKit.framework */; };
-		3F222C4616E9D782004CE15F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2616E9D782004CE15F /* UIKit.framework */; };
-		3F222C4716E9D782004CE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2816E9D782004CE15F /* Foundation.framework */; };
-		3F222C4F16E9D782004CE15F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F222C4D16E9D782004CE15F /* InfoPlist.strings */; };
-		3F222C5216E9D782004CE15F /* WeidoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5116E9D782004CE15F /* WeidoTests.m */; };
 		3F222C6E16E9D82F004CE15F /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5C16E9D82F004CE15F /* EditTaskViewController.m */; };
 		3F222C6F16E9D82F004CE15F /* FetchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C5E16E9D82F004CE15F /* FetchListViewController.m */; };
 		3F222C7016E9D82F004CE15F /* FetchRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C6016E9D82F004CE15F /* FetchRequestFactory.m */; };
@@ -41,18 +35,29 @@
 		3F222C8B16E9D984004CE15F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C8A16E9D984004CE15F /* CoreData.framework */; };
 		3FBA16B116F15B4900EC131B /* KPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA16AE16F15B4900EC131B /* KPStore.m */; };
 		3FBA16B216F15B4900EC131B /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */; };
+		3FBDFC391727BBA300DDA6AF /* BTSingleOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDFC381727BBA300DDA6AF /* BTSingleOperationQueue.m */; };
+		3FC4CEEE172BBE4500510EF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2616E9D782004CE15F /* UIKit.framework */; };
+		3FC4CEEF172BBE4500510EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2816E9D782004CE15F /* Foundation.framework */; };
+		3FC4CEF0172BBE4500510EF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C2A16E9D782004CE15F /* CoreGraphics.framework */; };
+		3FC4CEF6172BBE4500510EF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4CEF4172BBE4500510EF1 /* InfoPlist.strings */; };
+		3FC4CEF8172BBE4500510EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4CEF7172BBE4500510EF1 /* main.m */; };
+		3FC4CEFE172BBE4500510EF1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4CEFD172BBE4500510EF1 /* Default.png */; };
+		3FC4CF00172BBE4500510EF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4CEFF172BBE4500510EF1 /* Default@2x.png */; };
+		3FC4CF02172BBE4500510EF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4CF01172BBE4500510EF1 /* Default-568h@2x.png */; };
+		3FC4CF08172BBEF300510EF1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC4CF07172BBEF300510EF1 /* GHUnitIOS.framework */; };
+		3FC4CF0A172BBFC000510EF1 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4CF09172BBFC000510EF1 /* MyTest.m */; };
+		3FC4CF0D172BC28500510EF1 /* BTCoreDataStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4CF0C172BC28500510EF1 /* BTCoreDataStoreTest.m */; };
+		3FC4CF0E172BC46C00510EF1 /* BTCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD51BDC1720F6120093D993 /* BTCoreDataStore.m */; };
+		3FC4CF10172BC49F00510EF1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F222C8A16E9D984004CE15F /* CoreData.framework */; };
+		3FC4CF11172BC64600510EF1 /* Project+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD9C9D16F95E3D00B6E122 /* Project+Actions.m */; };
+		3FC4CF12172BC64600510EF1 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C9170561FA003E30CD /* Task.m */; };
+		3FC4CF13172BC64600510EF1 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C6170561FA003E30CD /* Tag.m */; };
+		3FC4CF14172BC64600510EF1 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0021C3170561F9003E30CD /* Project.m */; };
+		3FC4CF15172BC64600510EF1 /* Weido.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F222C7A16E9D83A004CE15F /* Weido.xcdatamodeld */; };
+		3FC4CF1F172BC94100510EF1 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC4CF1E172BC94100510EF1 /* libOCMock.a */; };
 		3FCD9C9E16F95E3D00B6E122 /* Project+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD9C9D16F95E3D00B6E122 /* Project+Actions.m */; };
+		3FD51BDD1720F6120093D993 /* BTCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD51BDC1720F6120093D993 /* BTCoreDataStore.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3F222C4816E9D782004CE15F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F222C1916E9D782004CE15F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F222C2116E9D782004CE15F;
-			remoteInfo = Weido;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F0021BD1705425B003E30CD /* TestAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAction.h; sourceTree = "<group>"; };
@@ -79,12 +84,7 @@
 		3F222C3816E9D782004CE15F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3F222C3A16E9D782004CE15F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3F222C3C16E9D782004CE15F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3F222C4316E9D782004CE15F /* WeidoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeidoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F222C4416E9D782004CE15F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3F222C4C16E9D782004CE15F /* WeidoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeidoTests-Info.plist"; sourceTree = "<group>"; };
-		3F222C4E16E9D782004CE15F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F222C5016E9D782004CE15F /* WeidoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeidoTests.h; sourceTree = "<group>"; };
-		3F222C5116E9D782004CE15F /* WeidoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeidoTests.m; sourceTree = "<group>"; };
 		3F222C5B16E9D82F004CE15F /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
 		3F222C5C16E9D82F004CE15F /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
 		3F222C5D16E9D82F004CE15F /* FetchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchListViewController.h; sourceTree = "<group>"; };
@@ -109,8 +109,30 @@
 		3FBA16AF16F15B4900EC131B /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
 		3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
 		3FBA16B316F15D7100EC131B /* KPStore+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KPStore+ActiveRecord.h"; sourceTree = "<group>"; };
+		3FBDFC371727BBA300DDA6AF /* BTSingleOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSingleOperationQueue.h; sourceTree = "<group>"; };
+		3FBDFC381727BBA300DDA6AF /* BTSingleOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSingleOperationQueue.m; sourceTree = "<group>"; };
+		3FC4CEEC172BBE4500510EF1 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC4CEF3172BBE4500510EF1 /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
+		3FC4CEF5172BBE4500510EF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FC4CEF7172BBE4500510EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FC4CEF9172BBE4500510EF1 /* test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
+		3FC4CEFD172BBE4500510EF1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FC4CEFF172BBE4500510EF1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FC4CF01172BBE4500510EF1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FC4CF07172BBEF300510EF1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		3FC4CF09172BBFC000510EF1 /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
+		3FC4CF0C172BC28500510EF1 /* BTCoreDataStoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCoreDataStoreTest.m; sourceTree = "<group>"; };
+		3FC4CF18172BC92B00510EF1 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		3FC4CF19172BC92B00510EF1 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		3FC4CF1A172BC92B00510EF1 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		3FC4CF1B172BC92B00510EF1 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		3FC4CF1C172BC92B00510EF1 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		3FC4CF1D172BC92B00510EF1 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		3FC4CF1E172BC94100510EF1 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		3FCD9C9C16F95E3D00B6E122 /* Project+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Project+Actions.h"; sourceTree = "<group>"; };
 		3FCD9C9D16F95E3D00B6E122 /* Project+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Project+Actions.m"; sourceTree = "<group>"; };
+		3FD51BDB1720F6120093D993 /* BTCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCoreDataStore.h; sourceTree = "<group>"; };
+		3FD51BDC1720F6120093D993 /* BTCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCoreDataStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +147,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F222C3F16E9D782004CE15F /* Frameworks */ = {
+		3FC4CEE9172BBE4500510EF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F222C4516E9D782004CE15F /* SenTestingKit.framework in Frameworks */,
-				3F222C4616E9D782004CE15F /* UIKit.framework in Frameworks */,
-				3F222C4716E9D782004CE15F /* Foundation.framework in Frameworks */,
+				3FC4CF10172BC49F00510EF1 /* CoreData.framework in Frameworks */,
+				3FC4CEEE172BBE4500510EF1 /* UIKit.framework in Frameworks */,
+				3FC4CEEF172BBE4500510EF1 /* Foundation.framework in Frameworks */,
+				3FC4CEF0172BBE4500510EF1 /* CoreGraphics.framework in Frameworks */,
+				3FC4CF08172BBEF300510EF1 /* GHUnitIOS.framework in Frameworks */,
+				3FC4CF1F172BC94100510EF1 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +168,8 @@
 			children = (
 				3FBA16AC16F15B4900EC131B /* KPStore */,
 				3F222C2C16E9D782004CE15F /* Weido */,
-				3F222C4A16E9D782004CE15F /* WeidoTests */,
+				3FC4CEF1172BBE4500510EF1 /* test */,
+				3FC4CF16172BC8F700510EF1 /* Libraries */,
 				3F222C2516E9D782004CE15F /* Frameworks */,
 				3F222C2316E9D782004CE15F /* Products */,
 			);
@@ -153,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				3F222C2216E9D782004CE15F /* Weido.app */,
-				3F222C4316E9D782004CE15F /* WeidoTests.octest */,
+				3FC4CEEC172BBE4500510EF1 /* test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +187,7 @@
 		3F222C2516E9D782004CE15F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FC4CF07172BBEF300510EF1 /* GHUnitIOS.framework */,
 				3F222C8A16E9D984004CE15F /* CoreData.framework */,
 				3F222C2616E9D782004CE15F /* UIKit.framework */,
 				3F222C2816E9D782004CE15F /* Foundation.framework */,
@@ -217,25 +244,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3F222C4A16E9D782004CE15F /* WeidoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3F222C5016E9D782004CE15F /* WeidoTests.h */,
-				3F222C5116E9D782004CE15F /* WeidoTests.m */,
-				3F222C4B16E9D782004CE15F /* Supporting Files */,
-			);
-			path = WeidoTests;
-			sourceTree = "<group>";
-		};
-		3F222C4B16E9D782004CE15F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F222C4C16E9D782004CE15F /* WeidoTests-Info.plist */,
-				3F222C4D16E9D782004CE15F /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		3F222C8C16E9DA37004CE15F /* Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,14 +271,64 @@
 		3FBA16AC16F15B4900EC131B /* KPStore */ = {
 			isa = PBXGroup;
 			children = (
+				3FBDFC371727BBA300DDA6AF /* BTSingleOperationQueue.h */,
+				3FBDFC381727BBA300DDA6AF /* BTSingleOperationQueue.m */,
 				3FBA16AD16F15B4900EC131B /* KPStore.h */,
 				3FBA16AE16F15B4900EC131B /* KPStore.m */,
 				3FBA16AF16F15B4900EC131B /* NSManagedObject+ActiveRecord.h */,
 				3FBA16B016F15B4900EC131B /* NSManagedObject+ActiveRecord.m */,
 				3FBA16B316F15D7100EC131B /* KPStore+ActiveRecord.h */,
+				3FD51BDB1720F6120093D993 /* BTCoreDataStore.h */,
+				3FD51BDC1720F6120093D993 /* BTCoreDataStore.m */,
 			);
 			name = KPStore;
 			path = ../KPStore;
+			sourceTree = "<group>";
+		};
+		3FC4CEF1172BBE4500510EF1 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4CF09172BBFC000510EF1 /* MyTest.m */,
+				3FC4CF0C172BC28500510EF1 /* BTCoreDataStoreTest.m */,
+				3FC4CEF2172BBE4500510EF1 /* Supporting Files */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		3FC4CEF2172BBE4500510EF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4CEF3172BBE4500510EF1 /* test-Info.plist */,
+				3FC4CEF4172BBE4500510EF1 /* InfoPlist.strings */,
+				3FC4CEF7172BBE4500510EF1 /* main.m */,
+				3FC4CEF9172BBE4500510EF1 /* test-Prefix.pch */,
+				3FC4CEFD172BBE4500510EF1 /* Default.png */,
+				3FC4CEFF172BBE4500510EF1 /* Default@2x.png */,
+				3FC4CF01172BBE4500510EF1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FC4CF16172BC8F700510EF1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4CF1E172BC94100510EF1 /* libOCMock.a */,
+				3FC4CF17172BC92B00510EF1 /* OCMock */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3FC4CF17172BC92B00510EF1 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4CF18172BC92B00510EF1 /* NSNotificationCenter+OCMAdditions.h */,
+				3FC4CF19172BC92B00510EF1 /* OCMArg.h */,
+				3FC4CF1A172BC92B00510EF1 /* OCMConstraint.h */,
+				3FC4CF1B172BC92B00510EF1 /* OCMock.h */,
+				3FC4CF1C172BC92B00510EF1 /* OCMockObject.h */,
+				3FC4CF1D172BC92B00510EF1 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,24 +351,22 @@
 			productReference = 3F222C2216E9D782004CE15F /* Weido.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3F222C4216E9D782004CE15F /* WeidoTests */ = {
+		3FC4CEEB172BBE4500510EF1 /* test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F222C5816E9D782004CE15F /* Build configuration list for PBXNativeTarget "WeidoTests" */;
+			buildConfigurationList = 3FC4CF05172BBE4500510EF1 /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
-				3F222C3E16E9D782004CE15F /* Sources */,
-				3F222C3F16E9D782004CE15F /* Frameworks */,
-				3F222C4016E9D782004CE15F /* Resources */,
-				3F222C4116E9D782004CE15F /* ShellScript */,
+				3FC4CEE8172BBE4500510EF1 /* Sources */,
+				3FC4CEE9172BBE4500510EF1 /* Frameworks */,
+				3FC4CEEA172BBE4500510EF1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F222C4916E9D782004CE15F /* PBXTargetDependency */,
 			);
-			name = WeidoTests;
-			productName = WeidoTests;
-			productReference = 3F222C4316E9D782004CE15F /* WeidoTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			name = test;
+			productName = test;
+			productReference = 3FC4CEEC172BBE4500510EF1 /* test.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -335,7 +391,7 @@
 			projectRoot = "";
 			targets = (
 				3F222C2116E9D782004CE15F /* Weido */,
-				3F222C4216E9D782004CE15F /* WeidoTests */,
+				3FC4CEEB172BBE4500510EF1 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -354,31 +410,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F222C4016E9D782004CE15F /* Resources */ = {
+		3FC4CEEA172BBE4500510EF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F222C4F16E9D782004CE15F /* InfoPlist.strings in Resources */,
+				3FC4CEF6172BBE4500510EF1 /* InfoPlist.strings in Resources */,
+				3FC4CEFE172BBE4500510EF1 /* Default.png in Resources */,
+				3FC4CF00172BBE4500510EF1 /* Default@2x.png in Resources */,
+				3FC4CF02172BBE4500510EF1 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3F222C4116E9D782004CE15F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F222C1E16E9D782004CE15F /* Sources */ = {
@@ -404,27 +447,28 @@
 				3F0021C4170561F9003E30CD /* Project.m in Sources */,
 				3F0021C7170561FA003E30CD /* Tag.m in Sources */,
 				3F0021CA170561FA003E30CD /* Task.m in Sources */,
+				3FD51BDD1720F6120093D993 /* BTCoreDataStore.m in Sources */,
+				3FBDFC391727BBA300DDA6AF /* BTSingleOperationQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F222C3E16E9D782004CE15F /* Sources */ = {
+		3FC4CEE8172BBE4500510EF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F222C5216E9D782004CE15F /* WeidoTests.m in Sources */,
-				3F0021D3170583D2003E30CD /* BTCrashReport.m in Sources */,
+				3FC4CF11172BC64600510EF1 /* Project+Actions.m in Sources */,
+				3FC4CF12172BC64600510EF1 /* Task.m in Sources */,
+				3FC4CF13172BC64600510EF1 /* Tag.m in Sources */,
+				3FC4CF14172BC64600510EF1 /* Project.m in Sources */,
+				3FC4CF15172BC64600510EF1 /* Weido.xcdatamodeld in Sources */,
+				3FC4CF0E172BC46C00510EF1 /* BTCoreDataStore.m in Sources */,
+				3FC4CEF8172BBE4500510EF1 /* main.m in Sources */,
+				3FC4CF0A172BBFC000510EF1 /* MyTest.m in Sources */,
+				3FC4CF0D172BC28500510EF1 /* BTCoreDataStoreTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3F222C4916E9D782004CE15F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F222C2116E9D782004CE15F /* Weido */;
-			targetProxy = 3F222C4816E9D782004CE15F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3F222C2F16E9D782004CE15F /* InfoPlist.strings */ = {
@@ -435,10 +479,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		3F222C4D16E9D782004CE15F /* InfoPlist.strings */ = {
+		3FC4CEF4172BBE4500510EF1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3F222C4E16E9D782004CE15F /* en */,
+				3FC4CEF5172BBE4500510EF1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -517,37 +561,55 @@
 			};
 			name = Release;
 		};
-		3F222C5916E9D782004CE15F /* Debug */ = {
+		3FC4CF03172BBE4500510EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weido.app/Weido";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Weido/Weido-Prefix.pch";
-				INFOPLIST_FILE = "WeidoTests/WeidoTests-Info.plist";
+				GCC_PREFIX_HEADER = "test/test-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Libraries\"/**";
+				INFOPLIST_FILE = "test/test-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Libraries\"/**",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		3F222C5A16E9D782004CE15F /* Release */ = {
+		3FC4CF04172BBE4500510EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weido.app/Weido";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Weido/Weido-Prefix.pch";
-				INFOPLIST_FILE = "WeidoTests/WeidoTests-Info.plist";
+				GCC_PREFIX_HEADER = "test/test-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Libraries\"/**";
+				INFOPLIST_FILE = "test/test-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Libraries\"/**",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -572,14 +634,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F222C5816E9D782004CE15F /* Build configuration list for PBXNativeTarget "WeidoTests" */ = {
+		3FC4CF05172BBE4500510EF1 /* Build configuration list for PBXNativeTarget "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F222C5916E9D782004CE15F /* Debug */,
-				3F222C5A16E9D782004CE15F /* Release */,
+				3FC4CF03172BBE4500510EF1 /* Debug */,
+				3FC4CF04172BBE4500510EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

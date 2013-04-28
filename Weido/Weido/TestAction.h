@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Project.h"
+#import "BTSingleOperationQueue.h"
 @interface TestAction : NSObject {
-  NSOperationQueue *_opQueue;
+  BTSingleOperationQueue *_opQueue;
   
 }
 - (void)test1 ;
 - (void)test2;
+
+- (void)test3;
+- (void)test4;
 @end

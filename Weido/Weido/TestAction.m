@@ -17,8 +17,7 @@
 - (id)init {
   self = [super init];
   if (self) {
-    _opQueue = [[NSOperationQueue alloc] init];
-    [_opQueue setMaxConcurrentOperationCount:1];
+    _opQueue = [[BTSingleOperationQueue alloc] init];
   }
   return self;
 }
@@ -80,4 +79,55 @@ static Project *_p1 = nil;
   
 }
 
+//NSBlockOperation *op = [_opQueue operationWithBlock:^{
+//  
+//} completion:^{
+//  
+//}];
+- (void)test3 {
+  __block Project *p1 = [Project createNewObject];
+  p1.name = @"project old name";
+  [p1 save];
+  NSLog(@"[1 save];");
+  NSBlockOperation *op = [BTSingleOperationQueue operationWithBlock:^{
+    Project *p2 = (Project*)[Project findByID:p1.objectID error:NULL];
+    p2.name = @"project new name";
+    [p2 save];
+    //NSLog(@"[p2 save];");
+  } completion:^{
+    
+  }];
+  [_opQueue addOperation:op];
+  [NSThread sleepForTimeInterval:1];
+  p1.name = @"project new name1";
+  p1.isFinish = [NSNumber numberWithBool:YES];
+  [p1 save];
+  NSLog(@"[12 save];");
+}
+
+- (void)test4 {
+  __block Project *p1 = [Project createNewObject];
+  p1.name = @"project old name";
+  [p1 save];
+  NSLog(@"[1 save];");
+  NSBlockOperation *op = [BTSingleOperationQueue operationWithBlock:^{
+    Project *p2 = (Project*)[Project findByID:p1.objectID error:NULL];
+    p2.name = @"project new name";
+    [p2 save];
+    //NSLog(@"[p2 save];");
+  } completion:^{
+    
+  }];
+  [_opQueue addOperation:op];
+  [NSThread sleepForTimeInterval:1];
+  p1.name = @"project new name1";
+  p1.isFinish = [NSNumber numberWithBool:YES];
+  [p1 save];
+  NSLog(@"[12 save];p1.name = %@", p1.name);
+  
+  Project *p3 = (Project*)[Project findByID:p1.objectID error:NULL];
+  NSLog(@"[3 ];p3.name = %@", p3.name);
+  
+  
+}
 @end
